@@ -3,21 +3,22 @@ from tkinter import messagebox, simpledialog, Tk
 # Create an if-main code block, *hint, type main then ctrl+space to auto-complete
 if __name__ == '__main__':
     # Make a new window variable, window = Tk()
-
+    window = Tk()
     # Hide the window using the window's .withdraw() method
-
+    window.withdraw()
     # Put this sentence in a pop-up message box:
     # "If you find yourself having to cross a piranha-infested river, here's how to do it..."
-
+    messagebox.showinfo(message="If you find yourself having to cross a piranha-infested river, here's how to do it...")
     # Get the player to enter an adjective
-
+    simpledialog.askstring(title='mad_libs', prompt="Adjective")
     # Get the player to enter a type of liquid
-
+    simpledialog.askstring(title='mad_libs', prompt="Type of Liqiud")
     # Get the player to enter a body part
-
+    simpledialog.askstring(title='mad_libs', prompt="Body Part")
     # Get the player to enter a verb
-
+    simpledialog.askstring(title='mad_libs', prompt="Verb")
     # Get the player to enter a place
+    simpledialog.askstring(title='mad_libs', prompt="Place")
 
     # The story below has has been written as a group of Strings joined
     # together by + signs. The story contains place holders, indicated
@@ -27,11 +28,11 @@ if __name__ == '__main__':
     #       other parts of the story.
 
     story = (
-        "Piranhas are more [**adjective**] during the day, so cross the river at\n"
-        "night. Piranhas are attracted to fresh [**type of liquid**] and will most\n"
-        "likely take a bite out of your [**body part**] if you [**verb**]. Whatever\n"
+        "Piranhas are more [**strong**] during the day, so cross the river at\n"
+        "night. Piranhas are attracted to fresh [**orange juice**] and will most\n"
+        "likely take a bite out of your [**toe**] if you [**run**]. Whatever\n"
         "you do, if you have an open wound, try to find another way to get "
-        "back to the [**place**]. Good luck!"
+        "back to the [**pool**]. Good luck!"
     )
 
     # Make a pop-up that contains the final story. The \n escape characters add
@@ -42,5 +43,5 @@ if __name__ == '__main__':
     # and ask the player different questions.
 
     # Run the window's .mainloop() method
-
+    window.mainloop()
     pass
